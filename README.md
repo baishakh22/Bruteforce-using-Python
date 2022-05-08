@@ -24,8 +24,7 @@ Now, You can use any username and password and try to login. Then the website wi
 ![Screenshot 2022-05-08 17 50 48](https://user-images.githubusercontent.com/93491482/167319412-b7b196a8-a2cb-4eb6-91cf-5f1878067115.png)
 
 
-##H2
-Python Install
+## Python Install
 
 We need a python in our system. As I'm using windows, so I will be install python in my windows. 
 Go to this website: https://www.python.org/ and Download this file. It will generate your OS device. 
@@ -35,20 +34,19 @@ Go to this website: https://www.python.org/ and Download this file. It will gene
 When you are istalling python try to keep this is your C:/ drive. It will easy to use it. Trust me. 
 The best way to install python just follow this: https://www.youtube.com/watch?v=bCY4D9n3Pew&t=55s youtube video it will helps a lot. 
 
-##H2
-cmd Prompt or Terminal 
+## cmd Prompt or Terminal 
 
 Now open to cmd prompt or your terminal and go to your python install directory then type 
-'''
+```
 pip install requests
-'''
+```
 ![59AE2604-583E-41AF-B39C-401403830C9A](https://user-images.githubusercontent.com/93491482/167319431-c96c81e2-3486-4f40-9d7f-5583e0101b29.JPG)
 
 If you don't have pip installed in your OS device then you can use this before install requests
-'''
+```
 python get-pip.py
-'''
-##Python Editor
+```
+## Python Editor
 in your isntalled apps search for python editor which is "IDLE(Python 3.10.64-bit)"
 ![Screenshot 2022-05-08 18 18 11](https://user-images.githubusercontent.com/93491482/167319459-578626b2-76a3-469b-9b4c-fbe6b73d707e.png)
 
@@ -59,8 +57,8 @@ After it opens it, save it as the Name You want to but at end use .py word. Like
 
 After you save it open the file. 
 
-##Check Python Requests Code
-
+## Check Python Requests Code
+```
 import requests
 url = " https://requestswebsite.notanothercoder.repl.co/confirm-login"
 
@@ -72,6 +70,7 @@ def send_request(username, password):
     
     r = requests.get(url, data=data)
     print(r.text)
+```
 ![Screenshot 2022-05-08 18 29 39](https://user-images.githubusercontent.com/93491482/167319479-6f06e007-3fcb-4fc4-a265-4d86f6d957ee.png)
 
 
@@ -83,14 +82,18 @@ Then the will be "IDLE Shell" interface will be pop-up.
 ![Screenshot 2022-05-08 18 32 50](https://user-images.githubusercontent.com/93491482/167319493-3a3e85ba-76c8-4be5-bfda-03904db637ce.png)
 
 
-Type "send_request("hi","hi"), as I used hi as my username and password so it. will say in a blue color that "Failed to login!". If it shows "Failed to login!" that means it request is working. 
+Type
+```
+send_request("hi","hi")
+```
+as I used hi as my username and password so it. will say in a blue color that "Failed to login!". If it shows "Failed to login!" that means it request is working. 
 ![Screenshot 2022-05-08 18 35 22](https://user-images.githubusercontent.com/93491482/167319506-0d93f829-ec8b-4494-b26c-5b67e6ce9f9b.png)
 
 
 
-##Python Code
+## Python Code
 
-
+```
 import requests
 import random
 from threading import Thread
@@ -143,9 +146,9 @@ def main():
 
 for x in range(20):
     Thread(target=main).start()
-                                  
+```                                  
  
-##Run Python Code
+## Run Python Code
 Now my whole python code is ready to use. But before I hit the run key, i have to make a file called tries.txt and it will be in the same directory as bruteforce.py. In my my case as I saved bruteforce.py file in Desktop so I create a text file in desktop. And called as tries.txt
 ![Screenshot 2022-05-08 18 44 03](https://user-images.githubusercontent.com/93491482/167319525-f339b4b7-24a3-42cc-826c-4f59c14e84f6.png)
 
@@ -165,6 +168,6 @@ If you open the correct_pass.txt, you will see the correct password.
 ![Screenshot 2022-05-08 17 05 30](https://user-images.githubusercontent.com/93491482/167319560-8af87d61-bf32-4ef8-b347-2b13901254de.png)
 
 
-#####Congratutaion!! After straight two days of work Successfully I can crack the password. 
+##### Congratutaion!! After straight two days of work Successfully I can crack the password. 
 
-#Note: Please, Please don't use it in actual website. It not only just demage the victim, but it will demage you. 
+# Note: Please, Please don't use it in actual website. It not only just demage the victim, but it will demage you. 
