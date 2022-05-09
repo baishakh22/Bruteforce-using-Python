@@ -1,15 +1,18 @@
 # Bruteforce-using-Python
 
-A brute force attack is great way to guessing the password. Hacker are always using all possible combination to guess the correct login info. Here I'm create a python script, where I can find password from a website. In this project I know the user name which is "username" and password is 5 letter, however, I don't the password. So my job here to create a random password where I used some common combination of letter and number. Here is my plan before I start this project: 
+A brute force attack is a great way to guess the password. Hackers are always using all possible combinations to guess the correct login info. Here I create a python script, where I can find passwords from a website. In this project I know the user name which is "username" and the password is 5 letters, however, I don't the password. So my job here is to create a random password where I used some common combination of letters and numbers. Here is my plan before I start this project: 
 
-First, Look for a vulenable website which is authorized to hack. If I can't either create a basic login website or use metasploit. 
-Second, use windows instead of macOS. It have more fucntion and easy to use. Specially "Metasploit" only works on windows and linux machine.
+First, Look for a vulnerable website that is authorized to hack. If I can't either create a basic login website or use Metasploit.
+
+Second, use windows instead of macOS. It has more functions and is easy to use. Especially "Metasploit" only works on Windows and Linux machines.
+
 Third, Install python in my system.
-Fourth, work on a python code which can generates random letter or number. 
 
-Disclaimer: Please don't use this in an actual website. Because this is not an ethical hacker do. You can just use it just for practice or learn. This is totally illigal, you might get charge for this. So, my advice will be use this on your created login environment or the best way to practice is "Metasploit". Which create a vulerabile website to play around it. 
+Fourth, work on a python code that can generate random letters or numbers. 
 
-Before, I'm going to start I need a login website where I can hack ethically. So I choose this website: 
+Disclaimer: Please don't use this on an actual website. Because this is not what an ethical hacker does. You can just use it just for practice or learning. This is totally illegal, you might get charged for this. So, my advice will be to use this on your created login environment or the best way to practice is "Metasploit". Which creates a vulnerable website to play around it. 
+
+Before I'm going to start I need a login website where I can hack ethically. So I choose this website: 
 ![Screen Shot 2022-05-07 at 5 22 24 PM](https://user-images.githubusercontent.com/93491482/167317020-c1af716e-6a2c-4a77-982c-024160f7b75e.png)
 
 Then click right side on your mouse then click "Inspect"
@@ -20,7 +23,7 @@ On the top you will find "Network" option. If you don't click on ">>" and select
 ![Screenshot 2022-05-08 17 44 02](https://user-images.githubusercontent.com/93491482/167319398-270c4900-0fd5-4a8a-bc55-afba31cd4439.png)
 
 
-Now, You can use any username and password and try to login. Then the website will say "Failed to login!" and you can see in "Inspect" file, under the "Name" section it calls "confirm-login". Click and you will see there are some subcategory called - "General, Response, Response Headers". In General category you will copy the "Request URL". This is your target machine/website. [Note: to check you used username and password click on payload, you will see the username and password you just used to check the website]
+Now, You can use any username and password and try to log in. Then the website will say "Failed to login!" and you can see in "Inspect" file, under the "Name" section it calls "confirm-login". Click and you will see there are some subcategories called - "General, Response, Response Headers". In the General category, you will copy the "Request URL". This is your target machine/website. [Note: to check you used username and password click on payload, you will see the username and password you just used to check the website]
 ![Screenshot 2022-05-08 17 50 48](https://user-images.githubusercontent.com/93491482/167319412-b7b196a8-a2cb-4eb6-91cf-5f1878067115.png)
 
 
@@ -149,7 +152,7 @@ for x in range(20):
 ```                                  
  
 ## Run Python Code
-Now my whole python code is ready to use. But before I hit the run key, i have to make a file called tries.txt and it will be in the same directory as bruteforce.py. In my my case as I saved bruteforce.py file in Desktop so I create a text file in desktop. And called as tries.txt
+Now my whole python code is ready to use. But before I hit the run key, I have to make a file called tries.txt and it will be in the same directory as bruteforce.py. In my case as I saved the bruteforce.py file in Desktop so I create a text file on the desktop. And called as tries.txt
 ![Screenshot 2022-05-08 18 44 03](https://user-images.githubusercontent.com/93491482/167319525-f339b4b7-24a3-42cc-826c-4f59c14e84f6.png)
 
 
@@ -157,17 +160,17 @@ Run it using f5 on your keyboard or click Run from the tab >> Run Module
 ![Screenshot 2022-05-08 18 40 59](https://user-images.githubusercontent.com/93491482/167319534-67aba223-0fe2-42f1-9757-8ac8c00ab8b2.png)
 
 
-"IDLE Shell" file will be open automatically and it shows bunch on Incorrent password combination. It probably take 2-3 mins(tike for your tea break). Then this loop will be stop after it find the correct password.
+"IDLE Shell" file will be open automatically and it shows a bunch of Incorrect password combinations. It probably takes 2-3 mins(take for your tea break). Then this loop will stop after it finds the correct password.
 ![Screenshot 2022-05-08 17 05 55](https://user-images.githubusercontent.com/93491482/167319548-9e722e89-e232-4158-998b-cb5791fd72d1.png)
 
-and if you open tries.txt file, you can see lots of failed password combination. Mine was 16511 wrong password. 
+and if you open the tries.txt file, you can see lots of failed password combinations. Mine was 16511 wrong password. 
 ![Screenshot 2022-05-08 18 52 44](https://user-images.githubusercontent.com/93491482/167319566-0fbbb43a-4697-4dd5-a5a8-c98a2a818184.png)
 
-correct password will be found in your same folder where is your bruteforce.py and .tries.txt file was created. And it will create a .txt file for you which name is correct_pass.txt. 
+the correct password will be found in the same folder where your bruteforce.py and .tries.txt file was created. And it will create a .txt file for you whose name is correct_pass.txt. 
 If you open the correct_pass.txt, you will see the correct password.
 ![Screenshot 2022-05-08 17 05 30](https://user-images.githubusercontent.com/93491482/167319560-8af87d61-bf32-4ef8-b347-2b13901254de.png)
 
 
-##### Congratutaion!! After straight two days of work Successfully I can crack the password. 
+##### Congratulations!! After straight two days of work Successfully I can crack the password. 
 
-# Note: Please, Please don't use it in actual website. It not only just demage the victim, but it will demage you. 
+# Note: Please, Please don't use it on the actual website. It not only just damages the victim, but it will damage you. 
